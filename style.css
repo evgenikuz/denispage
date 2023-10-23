@@ -1,0 +1,147 @@
+@font-face {
+    font-family: "Gilroy-Medium";
+    src: url("./fonts/Gilroy-Medium.eot"), format("eot"),
+        url("./fonts/Gilroy-Medium.ttf"), format("ttf"),
+        url("./fonts/Gilroy-Medium.woff"), format("woff");
+}
+@font-face {
+    font-family: "Gilroy-Bold";
+    src: url("./fonts/Gilroy-Bold.eot"), format("eot"),
+        url("./fonts/Gilroy-Bold.ttf"), format("ttf"),
+        url("./fonts/Gilroy-Bold.woff"), format("woff");
+}
+* {
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+#header{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    background-color:white;
+    z-index: 1;
+}
+nav a {
+    text-decoration: none;
+    color: #828282;
+}
+nav a:hover {
+    color: #070707;
+}
+nav li {
+    list-style: none;
+}
+nav ul {
+    padding: 0;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 42px;
+}
+hr {
+    color: #828282;
+    margin: 0;
+}
+.gray {
+    background-color: #F6F6F6;
+}
+#home {
+    margin-top:130px;
+}
+#home img {
+    height: 387px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 43%;
+}
+h1 {
+    font-family: "Gilroy-Bold", sans-serif;
+    font-size: 47px;
+    margin:0;
+    margin-bottom: 19px;
+}
+.above-the-picture {
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 30px;
+}
+h2 {
+    font-family: "Gilroy-Bold", sans-serif;
+    font-size: 34px;
+}
+.about-me {
+    padding: 107px 227px;
+}
+.text {
+    margin-bottom: 30px;
+}
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skill-name {
+    font-size: 14px;
+}
+.text-skills {
+    margin-top: 69px;
+}
+.level-of-skill {
+    margin-top: auto;
+}
+.portfolio img {
+    max-height: 524px;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 19px;
+}
+.link{
+    margin-top: 42px;
+    margin-bottom: 99px;
+}
+.portfolio a{
+    color:#070707;
+}
+.portfolio{
+    padding-top: 84px;
+    padding-bottom: 1px;
+}
+.contact-btn {
+    background-color:black;
+    color: white;
+    border-radius: 30px;
+    padding: 12px 30px;
+    margin-top: 17px;
+    margin-bottom: 35px;
+    cursor: pointer;
+}
+.contact-btn:hover {
+    background-color:white;
+    color:black;
+}
+.icons-container {
+    padding:45px 296px;
+    display: flex;
+    justify-content: space-around;
+}
+.icons-container a:hover img {
+    transform: scale(1.1);
+}
+.hint {
+    color:#828282;
+    font-size: 14px;
+}
