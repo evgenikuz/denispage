@@ -14,6 +14,7 @@
     font-family: 'Gilroy-Medium', sans-serif;
     font-size: 18px;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .container {
@@ -32,6 +33,7 @@
 nav a {
     text-decoration: none;
     color: #828282;
+    transition: 0.3s;
 }
 nav a:hover {
     color: #070707;
@@ -47,6 +49,17 @@ nav ul {
     margin: 0 auto 42px;
     max-width: 940px;
 
+}
+.mobile img {
+    height:19px;
+    object-fit: cover;
+    object-position: center;
+}
+.mobile {
+    display: none;
+    position: fixed;
+    top: 68px;
+    right: 30px;
 }
 hr {
     color: #828282;
@@ -89,6 +102,7 @@ h2 {
 .skills-container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 80px;
 }
 .skill-card {
@@ -107,6 +121,7 @@ h2 {
 }
 .portfolio img {
     max-height: 524px;
+    width: 100%;
     object-fit: cover;
     object-position: center;
     margin-top: 19px;
@@ -114,6 +129,10 @@ h2 {
 .link{
     margin-top: 42px;
     margin-bottom: 99px;
+    transition: 0.3s;
+}
+.link:hover {
+    transform: scale(1.1);
 }
 .portfolio a{
     color:#070707;
@@ -130,10 +149,15 @@ h2 {
     margin-top: 17px;
     margin-bottom: 35px;
     cursor: pointer;
+    transition: 0.3s;
+    border: 1px solid black;
 }
 .contact-btn:hover {
     background-color:white;
     color:black;
+}
+.icons-container img {
+    transition: 0.3s;
 }
 .icons-container {
     padding:45px 296px;
@@ -146,4 +170,12 @@ h2 {
 .hint {
     color:#828282;
     font-size: 14px;
+}
+@media (max-width: 500px) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
 }
