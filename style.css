@@ -40,11 +40,13 @@ nav li {
     list-style: none;
 }
 nav ul {
-    padding: 0;
-    padding-top: 20px;
+    padding:0px;
+    padding-top: 33px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 42px;
+    margin: 0 auto 42px;
+    max-width: 940px;
+
 }
 hr {
     color: #828282;
