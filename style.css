@@ -278,4 +278,7 @@ h2 {
     .contact-btn {
         align-self: stretch;
     }
+    .hint {
+        font-size: 18px;
+    }
 }
