@@ -11,20 +11,18 @@
     <div class="menu" id="header">
         <nav class="desktop">
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about-me">About me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contacts">Contacts</a></li>
+                <li><a class="item" href="#home">Home</a></li>
+                <li><a class="item" href="#about-me">About me</a></li>
+                <li><a class="item" href="#skills">Skills</a></li>
+                <li><a class="item" href="#portfolio">Portfolio</a></li>
+                <li><a class="item" href="#contacts">Contacts</a></li>
             </ul>
             <hr>
         </nav>
-        <nav class="mobile">
-            <button class="burger"><img src="./icons/hamburger-menu.svg" alt="Кнопка бургера"></button>
-        </nav>
+        <button class="burger"><img src="./icons/hamburger-menu.svg" alt="Кнопка бургера"></button>
     </div>
-    <div class="section">
-        <div class="container" id="home">
+    <div class="section" id="home">
+        <div class="container">
             <div class="above-the-picture">
                 <h1>Denis <br> Novik</h1>
                 <p>UX | UI designer
@@ -33,8 +31,8 @@
             <img src="./img/Denis-Novik.jpeg" alt="Denis Novik">
         </div>
     </div>
-    <div class="section gray">
-        <div class="container" id="about-me">
+    <div class="section gray" id="about-me">
+        <div class="container">
             <!-- <div class="about-me"> -->
                 <h2>About me</h2>
                 <p class="text">Hi, I'm Denis – UX/UI designer from Minsk. <br>
@@ -46,8 +44,8 @@
             <!-- </div> -->
         </div>
     </div>
-    <div class="section">
-        <div class="container" id="skills">
+    <div class="section" id="skills">
+        <div class="container">
             <h2>Skills</h2>
             <p class="text-skills">I work in such programs as</p>
             <div class="skills-container">
@@ -114,8 +112,8 @@
             </div>
         </div>
     </div>
-    <div class="section gray">
-        <div class="container" id="portfolio">
+    <div class="section gray" id="portfolio">
+        <div class="container">
             <div class="portfolio">
                 <h2>Portfolio</h2>
                 <a href="#"><img src="./img/fashion-store.jpg" alt="Homepage of an online fashion store">
@@ -127,8 +125,8 @@
             </div>
         </div>
     </div>
-    <div class="section">
-        <div class="container" id="contacts">
+    <div class="section" id="contacts">
+        <div class="container">
             <h2>Contacts</h2>
             <p class="text">Want to know more or just chat? 
             <br>You are welcome!</p>
@@ -143,5 +141,17 @@
                 LinkedIn, Instagram, Behance, Dribble</p>
         </div>
     </div>
+    <div class="mobile d-none">
+        <nav class="mobile_nav">
+            <a class="item navHome" href="#home">Home</a>
+            <a class="item navAbout" href="#about-me">About me</a>
+            <a class="item navSkills" href="#skills">Skills</a>
+            <a class="item navPortfolio" href="#portfolio">Portfolio</a>
+            <a class="item navContacts" href="#contacts">Contacts</a>
+        </nav>
+        <button class="close-btn"><img src="./icons/close.svg" alt="Кнопка закрытия">
+        </button>
+    </div>
 </body>
+<script src="script.js"></script>
 </html>
