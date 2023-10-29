@@ -210,6 +210,8 @@ h2 {
     width: 100vw;
     background:  #fff;
     padding: 66px 28px 0 26px;
+    transition: 1s;
+    right: 0;
 }
 .mobile_nav .item{
     font-size: 34px;
@@ -236,7 +238,8 @@ h2 {
     cursor:pointer;
 }
 .d-none {
-    display: none;
+    /* display: none; */
+    right: -100%;
 }
 .close-btn img {
     width: 22.873px;
